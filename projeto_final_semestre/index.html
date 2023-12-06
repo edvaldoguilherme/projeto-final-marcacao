@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramos Instrutor</title>
+    <link rel="stylesheet" href="navbar.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <meta name="author" content="edvaldo guilherme pereira ramos de santana">
+    <meta name="description" content="Instrutor de trânsito em Recife especializado em ajudar você a superar o medo de dirigir com confiança e segurança.">
+    <meta name="keywords" content="Instrutor de trânsito, medo de dirigir, superar medo ao dirigir, aulas de direção, Recife, direção segura, técnicas de direção, instrutor qualificado, confiança ao volante">
+    <title>Instrutor de Trânsito em Recife: Supere o Medo de Dirigir com Confiança</title>
+    <link rel="icon"  href="icon_21990181ed56a0e1408f9eb3162db537.ico">
+</head>
+<body>
+<nav>
+        <!--menu de navbar presente em todas as paginas do site inicialmente desenvolvido para ser responsivo numa futura atualização do site-->
+    <div class="logo">
+        <a href="index.html"><img src="imagens/logoRamos.png" alt="logo"> </a>
+    </div>
+    <div class="toggle">
+        <a href="#"><ion-icon name="menu-outline"></ion-icon></a>
+    </div>
+    <ul class="menu">
+        <li><a href="quemSomos.html">Quem somos?</a></li>
+        <li><a href="exAlunos.html">Ex-alunos</a></li>
+        <li><a href="dirijaJa.html">Dirija já!</a></li>
+        <li><a href="contato.html">Entre em contato</a></li>
+    </ul>
+</nav>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+    
+</script>
+<script>
+    $(function(){
+        $(".toggle").on("click", function(){
+            if($(".menu").hasClass("active")){
+                $(".menu").removeClass("active");
+                $(this).find("a").html("<ion-icon name='menu-outline'>");
+            } else{
+                $(".menu").addClass("active");
+                $(this).find("a").html("<ion-icon name='close-outline'>");
+            }
+        });
+    });
+</script>
+
+
+<div class="content">
+    <!--slide carroussel da pagina inicial-->
+    <div class="slides">
+        
+        <input type="radio" name="slide" id="slide1" checked>
+        <input type="radio" name="slide" id="slide2">
+        <input type="radio" name="slide" id="slide3">
+
+        
+        <div class="slide s1">
+            <img src="imagens/dirija a noite.png">
+        </div>
+
+        <div class="slide">
+            <img src="imagens/dirija a noite.png">
+        </div>
+
+        <div class="slide">
+            <img src="imagens/dirija a noite (1).png">
+        </div>
+        <div class="slide">
+            <img src="imagens/dirija a noite (2).png">
+        </div>
+         </div>
+    <div class="navigation">
+        
+        <label class="bar" for="slide1"></label>
+        <label class="bar" for="slide2"></label>
+        <label class="bar" for="slide3"></label>
+    </div>
+</div>
+
+<br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br>
+<br><br><br><br>
+
+
+<div> <!--fundo amarelo com texto e volante da pagina inicial-->
+    <ul>
+        <li>
+            <img src="imagens/fundo depois.png" alt="" width="100%">
+        </li>
+
+        <li>
+            <h1 class="titulo1">Controle seus sonhos!</h1>
+        </li>
+
+        <li>
+            <h2 class="texto1">Você quer dirigir, mas tem medo?
+                Não se preocupe, Ramos Instrutor te ajuda!
+                Milhões de pessoas em todo o mundo têm medo de dirigir!!!
+                  O medo de dirigir pode ser causado por uma variedade
+                de fatores, incluindo acidentes anteriores, traumas ou 
+                simplesmente falta de experiência.
+                Se você tem medo de dirigir, não desista.
+                Existem maneiras de superar esse medo e
+                aprender a dirigir com segurança.
+                </h2>
+        </li>
+        <li  class="link_vermelho">
+            <a  href="">CLIQUE AQUI E SAIBA MAIS!!!</a>
+        </li>
+        
+        <li class="volante"><img  src="imagens/volante.webp" alt=""></li><!--volante que gira-->
+    </ul>
+</div>
+
+<div>
+    <ul>
+        <li class="img_pessoa_medo">
+            <img src="imagens/pessoa_com_medo.png" alt="" width="1300px">
+        </li>
+        <li class="titulo2">
+            <h3>PERCA JÁ SEU MEDO!</h3>
+        </li>
+        <li class="texto2">
+            <p>VOCÊ É MAIS FORTE QUE SEUS PENSAMENTOS!
+                JUNTE-SE A   DEZENAS DE HABILITADOS DO RECIFE E REGIÃO METROPOLITANA QUE JÁ CONQUISTARAM SUA INDEPÊNDENCIA NO ATO DE DIRIGIR COM RAMOS INSTRUTOR!</p>
+                <a  href="#">CHEGOU SUA VEZ</a>
+        </li>   
+    </ul>
+    <br>
+</div>
+<!--rodapé da página-->
+<footer>
+    <div>
+        <ul>
+            <li class="imgfooter">
+                <a href="index.html">  <img src="imagens/LogoRamos.png" alt="" width="80px"></a>
+            </li>
+            <li class="imgfooter1">
+                <a href="https://www.linkedin.com/in/edvaldo-guilherme/">  <img src="imagens/logo_EG.png" alt="" width="100px"></a>
+            </li>
+            
+        </ul>
+        <p class="textofooter">version  1.0</p>
+    </div>
+</footer>
+
+
+
+
+</body>
+</html>

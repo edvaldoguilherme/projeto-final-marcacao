@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramos Instrutor</title>
+    <link rel="stylesheet" href="navbar.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <meta name="author" content="edvaldo guilherme pereira ramos de santana">
+    <meta name="description" content="Instrutor de trânsito em Recife especializado em ajudar você a superar o medo de dirigir com confiança e segurança.">
+    <meta name="keywords" content="Instrutor de trânsito, medo de dirigir, superar medo ao dirigir, aulas de direção, Recife, direção segura, técnicas de direção, instrutor qualificado, confiança ao volante">
+    <title>Instrutor de Trânsito em Recife: Supere o Medo de Dirigir com Confiança</title>
+    <link rel="icon"  href="icon_21990181ed56a0e1408f9eb3162db537.ico">
+</head>
+<body>
+    <!--menu de navbar presente em todas as paginas do site inicialmente desenvolvido para ser responsivo numa futura atualização do site-->
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img src="imagens/logoRamos.png" alt="logo"> </a>
+        </div>
+        <div class="toggle">
+            <a href="#"><ion-icon name="menu-outline"></ion-icon></a>
+        </div>
+        <ul class="menu">
+            <li><a href="quemSomos.html">Quem somos?</a></li>
+            <li><a href="exAlunos.html">Ex-alunos</a></li>
+            <li><a href="dirijaJa.html">Dirija já!</a></li>
+            <li><a href="contato.html">Entre em contato</a></li>
+        </ul>
+    </nav>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+        
+    </script>
+    <script>
+        $(function(){
+            $(".toggle").on("click", function(){
+                if($(".menu").hasClass("active")){
+                    $(".menu").removeClass("active");
+                    $(this).find("a").html("<ion-icon name='menu-outline'>");
+                } else{
+                    $(".menu").addClass("active");
+                    $(this).find("a").html("<ion-icon name='close-outline'>");
+                }
+            });
+        });
+    </script>
+
+<!--informaçoes e foto da pasta quem somos-->
+    <div class="quemSomosDiv">
+        <div><img src="imagens/ee media (5).png" alt="foto do instrutor ramos e uma aluna" width="800px"></div>
+        <div><h1 class="quemSomosDivTitulo">QUEM É RAMOS INSTRUTOR?</h1></div>
+        <div><p class="quemSomosDivTexto">Ramos Instrutor é reconhecido como um instrutor de trânsito credenciado pelo Detran-PE, com um extenso histórico de mais de uma década de experiência. Sua especialidade reside em trabalhar com indivíduos que enfrentam Amaxofobia, o medo incapacitante de dirigir.
+
+            Com um método de ensino altamente eficaz, ele se concentra em oferecer uma abordagem personalizada, baseada em muita prática e repetições de situações comuns do trânsito. Esse direcionamento permite que os alunos adquiram não apenas habilidades técnicas, mas também confiança e segurança para lidar com diferentes situações ao volante.
+            
+            Sua abordagem envolve não apenas a transmissão de conhecimento teórico, mas também a imersão prática em ambientes simulados e reais de tráfego. Esse treinamento prático e intensivo permite que os alunos ganhem familiaridade com os desafios típicos das estradas, garantindo que se sintam mais preparados e confiantes para enfrentar qualquer situação no seu cotidiano ao dirigir.
+            
+            Com a orientação cuidadosa e técnica de Ramos Instrutor, os alunos superam não apenas o medo inicial, mas também adquirem as habilidades necessárias para se tornarem motoristas confiantes e seguros, prontos para enfrentar qualquer desafio que o trânsito possa apresentar.</p></div>
+        <div class="linkparacontato"><a href="contato.html">CLIQUE AQUI E COMECE VOCÊ TAMBÉM SUA MUDANÇA DE VIDA</a></div>
+    </div>
+
+
+
+
+
+
+
+
+    <!--rodapé da página-->
+    <footer>
+        <div>
+            <ul>
+                <li class="imgfooter">
+                    <a href="index.html">  <img src="imagens/LogoRamos.png" alt="" width="80px"></a>
+                </li>
+                <li class="imgfooter1">
+                    <a href="https://www.linkedin.com/in/edvaldo-guilherme/">  <img src="imagens/logo_EG.png" alt="" width="100px"></a>
+                </li>
+                
+            </ul>
+            <p class="textofooter">version  1.0</p>
+        </div>
+    </footer>
+    
+    
+
+</body>
+</html>

@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@900&family=Montserrat:ital,wght@1,800&family=Roboto:wght@500&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}/*geral das paginas*/
+a{
+    text-decoration: none;
+    color: red;
+}/*tirando as linhas e colorindo a tag A*/
+body{
+    font-family: "Montserrat", sans-serif;
+}/*configuração de fonte no body*/
+
+
+
+
+nav{
+    background: #222;
+    padding: 5px  20px;
+    display: flex;
+    align-items: center;
+    
+}/*background, padding e alinhamento dentro da nav*/
+nav a{
+    color: #fff;
+}/*cor dos links dentro da nav*/
+nav a:hover{
+    transition: 0.4s;
+    color: #ffc800;
+}/*estilização de açoes dentro da nav quando o mouse está sobre o link*/
+
+
+.logo{
+    flex: 1;
+    
+}/*logo*/
+.logo:hover{
+    transition: 0.4s;
+    transform: scale(1.02);
+}/*logo se movimentando quando mouse passa sobre*/
+.logo a{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}/*estilizando links na logo*/
+.logo a:hover{
+    color: #fff;
+    
+}
+
+.logo  img{
+    width: 50px;
+    margin-right: 10px;
+    margin-top: 10px;
+}/*estilizando links na logo quando o mouse passa sobre*/
+
+
+.menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}/*estilizando menu*/
+
+.menu li{
+    padding: 15px 20px;
+    font-size: 19px;
+    color: #fff;
+}/*estilizando as li no menu*/
+.menu li:hover{
+    color: #ffc800;
+    cursor: pointer;
+    transition: 0.4s;
+}/*estilizando as li no menu quando o mouse está sobre*/
+
+.toggle{
+    font-size: 45px;
+    display: none;
+    margin-top: 16px;
+}
+
+
+/*quando a tela estiver numa largura menor q 1000px estas açoes acontecerão*/
+@media screen and (max-width: 1000px) {
+    nav{
+        display: block;
+        position: relative;
+        padding: 15px 20px;
+    }
+    .menu{
+        margin-top: 15px;
+        display: none;
+    }
+    
+    .menu.active, .toggle{
+        display: block;
+    }
+    .toggle{
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+
+    
+
+}
+
+
+
+
+/**/
+/*itens que fazem referencia ao slide*/
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+   height: 520px;
+   width: 1250px;
+   border-radius: 20px;
+   overflow: hidden;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.navigation {
+   position: fixed;
+   bottom: 20px;
+   left: 50%;
+   transform: translate(-50%);
+   display: flex;
+}
+
+.bar {
+    width: 70px;
+    height: 17px;
+    border: 2px solid #fff;
+    margin: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .6s;
+}
+
+.bar:hover {
+    background-color: #fff;
+}
+
+
+input {
+   display: none;
+}
+
+.slides {
+   display: flex;
+   width: 500%;
+   height: 100%;
+}
+
+.slide {
+   width: 20%;
+   transition: .6s;
+}
+
+.slide img {
+   width: 100%;
+   height: 100%;
+}
+#slide1:checked~.s1 {
+   margin-left: -20%;
+}
+
+#slide2:checked~.s1 {
+   margin-left: -40%;
+}
+
+#slide3:checked~.s1 {
+   margin-left: -60%;
+}
+/*fim de slide*/
+
+
+/*VOLANTE*/
+
+main{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.volante{
+    position: absolute;
+    width: 40%;
+    margin-top: -500px;
+    margin-left: 910px;
+    overflow: hidden;
+}
+.volante img{
+    width: 100%;
+    transition: 3s ease-in-out;
+}
+.volante:hover img{
+    transform: rotate(180deg);/*rotação do volante em 180 graus*/
+
+}
+
+.titulo1{
+    font-family: "Russo one",sans-serif;
+    margin-top: -620px;
+    margin-left: 20px;
+    font-size: 80px;
+}
+.texto1{
+    padding: 600px;
+    margin-top: -580px;
+    margin-left: -580px;
+}
+/*fim volante*/
+/*inicio da ultima parte do index*/
+.link_vermelho{
+    margin-top: -500px;
+    margin-left: 100px;
+    font-size: 40px;
+    list-style-type: none;
+}
+
+/*parte da index com a menina com medo*/
+.img_pessoa_medo{
+    margin-top: 150px;
+    margin-left: -250px;
+    
+}
+
+.titulo2{
+    font-family: "Russo one",sans-serif;
+    font-size: 50px;
+    margin-top: -800px;
+    margin-left: 700px;
+    list-style-type: none;
+}
+.texto2{
+    padding: 200px;
+    margin-top: -180px;
+    margin-left: 550px;
+    font-size: 40px;
+    text-align: center;
+    list-style-type: none;
+    color: #ffc800;
+ 
+}
+
+
+
+/*footer*/
+footer{
+    background-color: #222;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    
+}
+.imgfooter{
+    margin-left: 43%;
+}
+.imgfooter1{
+    margin-left: 50%;
+    margin-top: -91px;
+}
+.textofooter{
+    color: #fff;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/*card alunos PG EX ALUNOS*/
+.div_card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.card{
+    border: #fff;
+    border-radius: 40px;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 8px;
+    height: 350px;
+    width: 29%;
+}
+.titulo_card{
+    font-size: 30px;
+    color: #ffc800;
+}
+ /*QUEM SOMOS*/
+.quemSomosDiv{
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.quemSomosDivTitulo{
+    font-family: "Russo one", open sans-serif;
+    font-size: 60px;
+}
+.quemSomosDivTexto{
+    padding: 80px;
+    font-size: 30px;
+    text-align: center;
+}
+.linkparacontato{
+    padding: 80px;
+    font-size: 50px;
+    text-align: center;
+    color: red;
+}
+.linkparacontato:hover{
+    transition: 0.4s;
+    transform: scale(1.02);
+}
+/*DIRIJA JA*/
+.divPrincipalDirijaJa{
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 45px;
+}
+.h1DirijaJa{
+    text-align: center;
+    font-family: "russo one";
+    font-size: 70px;
+}
+.imgOculosEscuros{
+    margin-top: -1200px;
+    margin-left: 1020px;
+}
+.emojicoracao{
+    margin-top: -800px;
+    margin-left: -1000px;
+}
+.emojicade{
+    margin-top: -900px;
+    margin-left: 1000px;
+
+}
+.emojiultimo{
+    margin-top: -850px;
+    margin-left: -1000px;
+}
+/*scroll bar*/
+::-webkit-scrollbar{
+    width: 10px;
+    
+}
+::-webkit-scrollbar-thumb{
+    background-color: #222;
+}

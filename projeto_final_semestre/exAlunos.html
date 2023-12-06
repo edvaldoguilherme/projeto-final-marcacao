@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramos Instrutor</title>
+    <link rel="stylesheet" href="navbar.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <meta name="author" content="edvaldo guilherme pereira ramos de santana">
+    <meta name="description" content="Instrutor de trânsito em Recife especializado em ajudar você a superar o medo de dirigir com confiança e segurança.">
+    <meta name="keywords" content="Instrutor de trânsito, medo de dirigir, superar medo ao dirigir, aulas de direção, Recife, direção segura, técnicas de direção, instrutor qualificado, confiança ao volante">
+    <title>Instrutor de Trânsito em Recife: Supere o Medo de Dirigir com Confiança</title>
+    <link rel="icon"  href="icon_21990181ed56a0e1408f9eb3162db537.ico">
+</head>
+<body>
+    <nav>
+            <!--menu de navbar presente em todas as paginas do site inicialmente desenvolvido para ser responsivo numa futura atualização do site-->
+        <div class="logo">
+            <a href="index.html"><img src="imagens/logoRamos.png" alt="logo"> </a>
+        </div>
+        <div class="toggle">
+            <a href="#"><ion-icon name="menu-outline"></ion-icon></a>
+        </div>
+        <ul class="menu">
+            <li><a href="quemSomos.html">Quem somos?</a></li>
+            <li><a href="exAlunos.html">Ex-alunos</a></li>
+            <li><a href="dirijaJa.html">Dirija já!</a></li>
+            <li><a href="contato.html">Entre em contato</a></li>
+        </ul>
+    </nav>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+        
+    </script>
+    <script>
+        $(function(){
+            $(".toggle").on("click", function(){
+                if($(".menu").hasClass("active")){
+                    $(".menu").removeClass("active");
+                    $(this).find("a").html("<ion-icon name='menu-outline'>");
+                } else{
+                    $(".menu").addClass("active");
+                    $(this).find("a").html("<ion-icon name='close-outline'>");
+                }
+            });
+        });
+    </script>
+    <br><br>
+    <!--cards com informaçoes de cada aluno que ja passou pela empresa-->
+    <div class="div_card">
+        <div class="card">
+            <img src="imagens_alunos/8.png" alt="foto aluna kaylane" width="200px">
+            <h4 class="titulo_card">Kaylane</h4>
+            <br>
+            <p class="para">"Eu tinha um medo absurdo de dirigir, mas o professor ramos me ajudou em todos os sentidos e hoje vou para qualquer lugar sozinha!"</p>
+        </div>
+        <div class="card">
+            <img src="imagens_alunos/9.png" alt="foto aluna marcia" width="200px">
+            <h4 class="titulo_card">Marcia</h4>
+            <br>
+            <p class="para">"Antes, o medo de dirigir me dominava. Ramos instrutor, foi fundamental para superar isso. Hoje, conduzo com tranquilidade, sem temores."</p>
+        </div>
+        <div class="card">
+            <img src="imagens_alunos/7.png" alt="foto aluno Jefferson" width="200px">
+            <h4 class="titulo_card">Jefferson</h4>
+            <br>
+            <p class="para">"Dirigir era um desafio imenso. A orientação do instrutor Ramos foi crucial. Agora, encaro as vias com mais confiança e determinação."</p>
+        </div>
+    </div>
+    <br>
+    <div class="div_card">
+        <div class="card">
+            <img src="imagens_alunos/10.png" alt="foto aluna Mariana" width="200px">
+            <h4 class="titulo_card">Mariana</h4>
+            <br>
+            <p class="para">"O medo de dirigir me limitava. Com o apoio do instrutor Ramos, superei essa barreira. Hoje, sinto-me livre ao volante, sem receios do passado."</p>
+        </div>
+        <div class="card">
+            <img src="imagens_alunos/11.png" alt="foto aluna Cleiton" width="200px">
+            <h4 class="titulo_card">Cleiton</h4>
+            <br>
+            <p class="para">"Antes, dirigir gerava ansiedade. Ramos, o instrutor, foi essencial. Sua orientação me deu segurança e transformou o medo em habilidade ao volante."</p>
+        </div>
+        <div class="card">
+            <img src="imagens_alunos/12.png" alt="foto aluna Florence" width="200px">
+            <h4 class="titulo_card">Florence</h4>
+            <br>
+            <p class="para">"Dirigir costumava ser um grande desafio, até conhecer um instrutor chamado Ramos. Com sua orientação, venci o medo e hoje encaro as estradas com confiança."</p>
+        </div>
+    </div>
+
+
+    <div class="linkparacontato"><a href="contato.html">CLIQUE AQUI E COMECE VOCÊ TAMBÉM SUA MUDANÇA DE VIDA</a></div>
+
+
+
+
+
+
+
+
+    <br><br>
+    <!--rodapé da página-->
+    <footer>
+        <div>
+            <ul>
+                <li class="imgfooter">
+                    <a href="index.html">  <img src="imagens/LogoRamos.png" alt="" width="80px"></a>
+                </li>
+                <li class="imgfooter1">
+                    <a href="https://www.linkedin.com/in/edvaldo-guilherme/">  <img src="imagens/logo_EG.png" alt="" width="100px"></a>
+                </li>
+                
+            </ul>
+            <p class="textofooter">version  1.0</p>
+        </div>
+    </footer>
+    
+    
+
+</body>
+</html>
